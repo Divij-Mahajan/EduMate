@@ -7,18 +7,23 @@ function Header() {
     return (
         <div className="bg-[--secondary] fixed top-0 left-0  h-20 z-50 p-7 flex justify-between header-div" style={{ width: "100vw" }}>
 
-            <div className="flex items-center">
-                <img src={logo} width={45} />
+            <div className="flex items-center justify-between w-full">
+                <img src={logo} width={45} onClick={() => { navigate("/") }} />
+                <div className="flex justify-end gap-10 ">
+                    <button className="text-xl" onClick={() => { navigate("/student") }}>Student</button>
+                    <button className="text-xl" onClick={() => { navigate("/educator") }}>Educator</button>
+                </div>
 
-            </div>
+            </div >
             {/* <div className="flex items-center gap-5 text-xl">
                 {categories.map((category, i) => {
                     return <a className="hover:scale-110" href={`/${category}`}>{category}</a>
                 })}
             </div> */}
-            <div className="w-full h-0.5 bg-black absolute bottom-0 left-0"></div>
 
-        </div>
+            < div className="w-full h-0.5 bg-black absolute bottom-0 left-0" ></div >
+
+        </div >
     );
 }
 
