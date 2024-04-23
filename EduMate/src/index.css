@@ -47,7 +47,9 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  background: var(--primary);
+  color: black;
+  /* border: 1px solid var(--tertiary); */
 }
 
 button:focus,

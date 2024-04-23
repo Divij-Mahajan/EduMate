@@ -4,6 +4,7 @@ import Home from './home'
 import Header from './components/Header-Footer/header'
 import Footer from './components/Header-Footer/footer'
 import Student from './student'
+import Exams from './exams'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/student" element={<Student />} />
+          <Route path="/exam" element={<Exams />} />
 
         </Routes>
       </div>
